@@ -1,0 +1,204 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto;
+}
+
+.grid div {
+    background-color: #607d8b;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    counter-increment: counter;
+
+}
+
+.grid div:after {
+    content: "Elment " counter(counter);
+
+}
+
+/* حل اخر  */
+/* .grid div:nth-child(2):after {
+    content: "Elment2";
+}
+
+.grid div:nth-child(3):after {
+    content: "Elment3";
+}
+
+.grid div:nth-child(4):after {
+    content: "Elment4";
+}
+
+.grid div:nth-child(5):after {
+    content: "Elment5";
+}
+
+.grid div:nth-child(6):after {
+    content: "Elment6";
+} */
+.layout {
+    width: 100%;
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "head head head head head head head head"
+        "sic sic sic sic sic sic side side "
+        "foot foot foot foot foot foot foot foot ";
+    grid-template-rows: 50px 500px 50px;
+}
+
+header {
+    background-color: #03a9f4;
+    grid-area: head;
+    padding: 10px;
+}
+
+header::after {
+    content: "Header";
+
+}
+
+section {
+    background-color: #ff5722;
+    grid-area: sic;
+    padding: 10px;
+}
+
+section::after {
+    content: "section";
+
+}
+
+aside {
+    background-color: #607d8b;
+    grid-area: side;
+    padding: 10px;
+}
+
+aside::after {
+    content: "aside";
+
+}
+
+footer {
+    background-color: #009688;
+    grid-area: foot;
+    padding: 10px;
+}
+
+footer::after {
+    content: "footer";
+
+}
+
+.grid-1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 40px auto auto 40px;
+    grid-template-rows: auto 50px;
+    margin: 20px;
+}
+
+.grid-1 div {
+    background-color: #403f3f;
+    margin: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid-2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "eight eight eight eight eight eight"
+        "two two two two three three"
+        "four four five five five five"
+        "six six five five five five"
+        "seven seven five five five five"
+        "one one one one one one ";
+    gap: 10px;
+
+}
+
+.grid-2 div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid-2 div {
+    background-color: #2196f3;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.grid-3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-content: space-between;
+}
+
+.grid-3 div {
+    background-color: #e91e63;
+    padding: 2px;
+    color: white;
+    text-align: center;
+}

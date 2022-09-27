@@ -1,0 +1,44 @@
+.assgin2 {
+    width: 400px;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid;
+    border-color: #f00 #5e9de6;
+    margin: 20px;
+}
+
+span {
+    background-color: #5e9de6;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    padding: 4px;
+    position: absolute;
+}
+
+.top-left {
+    top: 5px;
+    left: 14px;
+    border-right: 2px solid #f00;
+}
+
+.top-right {
+    top: 5px;
+    left: 442px;
+    border-left: 2px solid #f00;
+}
+
+.bottom-left {
+    top: 106px;
+    left: 14px;
+    border-right: 2px solid #f00;
+}
+
+.bottom-right {
+    top: 106px;
+    left: 442px;
+    border-left: 2px solid #f00;
+}

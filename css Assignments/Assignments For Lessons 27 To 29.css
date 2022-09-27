@@ -1,0 +1,67 @@
+.assgin1 {
+    background-color: #eee;
+    width: 800px;
+    display: inline-block;
+}
+
+.full-width {
+    background-color: rgb(221, 218, 218);
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+
+.three div,
+.four div,
+.two div {
+    float: left;
+    background-color: rgb(221, 218, 218);
+    margin-left: 15px;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+
+.three div {
+    width: calc((100% - 60px) / 3);
+}
+
+.two div {
+
+    width: calc((100% - 45px) / 2);
+}
+
+.four div {
+    width: calc((100% - 75px) / 4);
+}
+
+.clear {
+    clear: both;
+}
+
+.assgin2 {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.assgin2 .normal,
+.assgin2 .one,
+.assgin2 .two {
+    margin: 15px;
+    background-color: rgb(102, 101, 101);
+    padding: 15px;
+}
+
+.assgin2 .one {
+    opacity: .5;
+}
+
+.assgin2 .two {
+    opacity: .1
+}

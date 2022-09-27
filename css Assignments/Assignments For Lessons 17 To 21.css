@@ -1,0 +1,36 @@
+.assgin1 {
+    text-shadow: 1px 1px 0px rgb(211, 56, 56), 2px 2px 0px rgba(23, 80, 202), 3px 3px 0 rgb(114, 10, 146);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.assgin3-1,
+.assgin3-2,
+.assgin3-3 {
+    width: 400px;
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px;
+    font-size: 20px
+}
+
+
+.assgin3-2 {
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.assgin3-3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

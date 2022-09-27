@@ -1,0 +1,5 @@
+div[title]:not(.no-need,
+    :last-child,
+    :nth-last-child(3)) {
+    color: red;
+}

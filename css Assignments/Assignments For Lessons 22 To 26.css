@@ -1,0 +1,56 @@
+.assign-1-1 {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.assign-1-1 p {
+    padding: inherit;
+    border: inherit;
+    background-color: #eee;
+    text-align: center;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.assign-1-2 {
+    border: 1px solid green;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.assign-1-2 p {
+    padding: inherit;
+    border: inherit;
+    background-color: #eee;
+    text-align: center;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html {
+    font-size: 20px;
+}
+
+.assign-2-1 {
+    font-size: 2.5rem;
+}
+
+.assign-2-2 {
+    font-size: 2rem;
+}
+
+.assign-2-3 {
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    margin: 5px;
+}

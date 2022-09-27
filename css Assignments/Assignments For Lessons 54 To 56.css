@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.assign-1::first-letter {
+    color: #f44336;
+}
+
+.assign-1 {
+    width: 600;
+    height: 70px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    border-right: 10px solid #673ab7;
+    border-left: 10px solid #f44336;
+    margin: 20px auto;
+}
+
+.assign-1::after {
+    content: "";
+    width: 102%;
+    height: 130%;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: -10px;
+    background-image: linear-gradient(to right,
+            #f44336 20%,
+            #2196f3 20%,
+            #2196f3 40%,
+            #4caf50 40%,
+            #4caf50 60%,
+            #e91e63 60%,
+            #e91e63 80%,
+            #673ab7 80%);
+}
+
+.form {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 620px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+input {
+    background-color: #eee;
+    height: 40px;
+    margin: 10px;
+    width: 600px;
+    font-weight: bold;
+    opacity: 1;
+    border: none;
+    padding: 10px;
+    caret-color: red;
+}
+
+.input::before {
+    content: "";
+    display: inline-block;
+    width: 96.8%;
+    height: 3px;
+    position: relative;
+    top: 55px;
+    left: 10px;
+    background-image: linear-gradient(to right,
+            #f44336 50%,
+            #009688 50%
+            );
+}

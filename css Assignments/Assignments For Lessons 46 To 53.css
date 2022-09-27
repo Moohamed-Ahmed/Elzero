@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+.assign-1 {
+    display: flex;
+    width: 100px;
+    background-color: #eee;
+    height: 100px;
+    color: #ff5722;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: -6px 0px 0 #03a9f4, 6px 0px 0 #ff5722;
+}
+
+.parent {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    background-color: #eee;
+    padding: 15px;
+}
+
+.parent div {
+    background-color: #f44336;
+    text-align: center;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: calc(96% / 3);
+}
+
+.parent-2 {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    background-color: #eee;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.parent-2 div {
+    background-color: #607d8b;
+    width: calc(96% / 3);
+    color: white;
+    padding: 10px;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.one {
+    order: 4;
+    align-self: flex-end;
+}
+
+.two {
+    order: 5;
+}
+
+.three {
+    order: 2;
+    align-self: flex-start;
+}
+
+.four {
+    order: 1;
+}
+
+.five {
+    order: 6;
+}
+
+.six {
+    order: 3;
+}
+
+.parent-3 {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    background-color: #eee;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.parent-3 div {
+    background-color: #009688;
+    color: white;
+    height: calc(96% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-1 {
+    width: 20px;
+}
+
+.two-2 {
+    align-self: flex-start;
+    width: 50%;
+}
+
+.three-3 {
+    width: 20px;
+}
+
+.parent-4 {
+    padding: 10px;
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent-4 div {
+    width: calc(90% / 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    color: white;
+
+}
+
+.one-4 {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.two-4 {
+    background-color: #8bc34a;
+    align-self: flex-end;
+    order: 3;
+}
+
+
+.three-4 {
+    background-color: #795548;
+    order: 4;
+
+}
+
+.four-4 {
+    background-color: #673ab7;
+    align-self: flex-end;
+    order: 1;
+}

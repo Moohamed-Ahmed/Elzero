@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.assign1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fcb455;
+    border-top-color: transparent;
+    position: absolute;
+    top: 50%;
+    animation: circle 1s infinite;
+    animation-timing-function: linear;
+
+
+}
+
+.assign1:hover {
+    animation-play-state: paused;
+}
+
+.assign1::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #2390ff;
+    border-left-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.assign1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #d81c55;
+    border-right-color: transparent;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.assign2 {
+    margin: 80px auto;
+    position: absolute;
+    top: 50%;
+}
+
+.assign2:hover>div {
+    animation-play-state: running;
+}
+
+.assign2 .div1 {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    border-bottom-color: transparent;
+    animation: circle 3s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    position: relative;
+    right: -5px;
+    top: -5px;
+}
+
+.assign2 .div2 {
+    content: "";
+    width: 33px;
+    height: 33px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #fcb455;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    animation: circle 2s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+
+.assign2 .div3 {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #25b4ff;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 11px;
+    top: 12px;
+    animation: circle 1s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+
+
+
+.span1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-top-color: transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: 150px;
+    background-color: #d8d8aa;
+    animation: circle 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circle {
+    to {
+        transform: rotate(1turn);
+    }
+}
+

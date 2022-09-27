@@ -1,0 +1,29 @@
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+
+}
+
+.parent p,
+.title {
+    color: green;
+}
+
+.div-parent .div1,
+.div2,
+.div3,
+.div4 {
+    background-color: red;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    height: 20px;
+}
+
+.div4 {
+    overflow: hidden;
+
+}

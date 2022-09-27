@@ -1,0 +1,71 @@
+.assgin1 div {
+    width: 300px;
+    height: 60px;
+    background-color: #eee;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+div:empty {
+    background-color: red;
+}
+
+.assgin2 div {
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    background-color: #eee;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+}
+
+div::first-letter {
+    visibility: hidden;
+}
+
+.assgin2 div::before {
+    content: "1";
+    background-color: red;
+    color: white;
+    padding: 11px;
+    position: absolute;
+    left: -11px;
+    top: 10px;
+}
+
+.assgin3 p {
+    background-color: #eee;
+    padding: 15px;
+    margin: 10px auto;
+    width: 500px;
+    border-left: 5px solid #e91e63;
+    text-align: left;
+    position: relative;
+}
+
+.assgin3 p::before {
+    content: attr(data-person);
+    background-color: #ddd;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50px;
+    position: absolute;
+    left: -120px;
+    top: -5px;
+}
+
+.assgin3 p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #e91e63 transparent transparent;
+    position: absolute;
+    top: 12px;
+    left: -31px;
+}

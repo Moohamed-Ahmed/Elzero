@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    font-family: system-ui;
+}
+
+body {
+    background-color: #eee;
+}
+
+.parent {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "osamamohamed osamamohamed osamamohamed osamamohamed ahmedsayed ahmedsayed shadynabil shadynabil"
+        "mohamedibrahim mohamedibrahim mahmoudmaohamed mahmoudmaohamed mahmoudmaohamed mahmoudmaohamed shadynabil shadynabil "
+        "mohamedibrahim mohamedibrahim ezzeldin ezzeldin ezzeldin ezzeldin shadynabil shadynabil"
+        "mohamedsayed mohamedsayed ibrahimsayed ibrahimsayed gamalsayed gamalsayed emansayed emansayed"
+    ;
+    gap: 10px;
+}
+
+.parent div {
+    border-bottom: 4px solid #ff3d00;
+    background-color: white;
+    padding: 22px;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    right: 2px;
+    bottom: -50px;
+    font-size: 80px;
+    opacity: .4;
+}
+
+.jop {
+    font-weight: bold;
+    opacity: .5;
+}
+
+.lorem-1 {
+    font-weight: 800;
+    margin: 10px 0 10px 0;
+}
+
+.person-3,
+.person-5,
+.person-8 {
+    background-color: black !important;
+    color: white;
+}
+
+.person-1 {
+    grid-area: osamamohamed;
+}
+
+.person-2 {
+    grid-area: ahmedsayed;
+}
+
+.person-3 {
+    grid-area: shadynabil;
+}
+
+.person-4 {
+    grid-area: mohamedibrahim;
+}
+
+.person-5 {
+    grid-area: mahmoudmaohamed;
+
+}
+
+.person-6 {
+    grid-area: ezzeldin;
+}
+
+.person-7 {
+    grid-area: mohamedsayed;
+}
+
+.person-8 {
+    grid-area: ibrahimsayed;
+
+}
+
+.person-9 {
+    grid-area: gamalsayed;
+}
+
+.person-10 {
+    grid-area: emansayed;
+}

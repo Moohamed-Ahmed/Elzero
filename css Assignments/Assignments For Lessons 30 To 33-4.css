@@ -1,0 +1,39 @@
+table {
+    width: 700px;
+    background-color: #eee;
+    border-bottom: 2px solid #4fb6ac;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+thead {
+    background-color: #404040;
+    color: white;
+}
+
+td {
+    text-align: center;
+    height: 44px;
+    outline: 1px solid white;
+}
+
+button {
+    background-color: #03a9f4;
+    color: white;
+    padding: 4px;
+    border: none;
+    width: 54px;
+}
+
+button.del {
+    background-color: #e91e63;
+}
+
+caption {
+    margin: 15px;
+}
+
+img {
+    width: 39px;
+}

@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+:root {
+    --mincolor: #FF5723;
+    --textcolor: white;
+}
+
+.assign-1 {
+    width: 150px;
+    background-color: var(--mincolor);
+    text-align: center;
+    padding: 10px;
+    margin: 100px auto;
+    color: var(--textcolor);
+    position: relative;
+
+}
+
+.assign-1::before {
+    content: "";
+    width: 110%;
+    height: 110%;
+    background-color: var(--mincolor);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    transform: skew(10deg, 10deg);
+}
+
+.assign-1::after {
+    content: "";
+    width: 110%;
+    height: 110%;
+    background-color: var(--mincolor);
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    transform: skew(-10deg, -10deg);
+}
+
+.assign-2 {
+    width: 150px;
+    background-color: #009688;
+    text-align: right;
+    padding: 20px;
+    margin: 40px auto;
+    color: var(--textcolor);
+    position: relative;
+
+}
+
+.assign-2::before {
+    content: "";
+    background-color: #009688;
+    width: 23px;
+    height: 100%;
+    position: absolute;
+    transform: skewX(20deg);
+    top: 0;
+    left: -14px;
+    border-right: 5px solid;
+}
+
+.class {
+    transform: matrix(3, 0.2679, 0, 3, 20, 100);
+}
+
+/*  scalex skewy scaley skewx trnslatex translatey*/
+
+
+.assign-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #607d8b;
+    text-align: center;
+    margin: 120px auto;
+    border-bottom: 5px solid;
+    position: relative;
+}
+
+.assign-3::before {
+    content: "Elzero";
+    color: var(--textcolor);
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.assign-3::after {
+    content: "";
+    color: var(--textcolor);
+    font-weight: bold;
+    position: absolute;
+    top: -75px;
+    right: 28px;
+    width: 136px;
+    height: 136px;
+    background-color: black;
+    transform: rotate(45deg);
+    border: 4px solid;
+    border-color: transparent white white transparent;
+}
+
+.assign-4 {
+    width: 200px;
+    height: 200px;
+    background-color: #fa3664;
+    margin: 50px auto;
+    perspective: 300px;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+    perspective: 50px;
+
+}
+
+.assign-4::before {
+    content: "front";
+    color: var(--textcolor);
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
+
+.assign-4::after {
+    content: "back";
+    color: var(--textcolor);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    width: 100%;
+    background-color: #1692fc;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}
+
+.assign-4:hover {
+    transform: rotatex(180deg);
+}
+
+.assign-4-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #fa3664;
+    margin: 50px auto;
+    perspective: 300px;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+    perspective: 50px;
+
+}
+
+.assign-4-2::before {
+    content: "front";
+    color: var(--textcolor);
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
+
+.assign-4-2::after {
+    content: "back";
+    color: var(--textcolor);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    width: 100%;
+    background-color: #1692fc;
+    transform: rotatey(180deg);
+    backface-visibility: hidden;
+}
+
+.assign-4-2:hover {
+    transform: rotatey(180deg);
+}

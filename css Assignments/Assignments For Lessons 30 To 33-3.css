@@ -1,0 +1,35 @@
+.parent {
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.parent-li-1,
+.parent-li-2,
+.parent-li-3 {
+    list-style-type: none;
+    margin-bottom: 19px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.child li {
+    background-color: white;
+    margin: 5px;
+    padding: 7px;
+}
+
+.parent-li-2 .child {
+    list-style-type: upper-roman;
+}
+
+.parent-li-3 .child li {
+    list-style-position: inside;
+    list-style-type: circle;
+
+}
+
+.parent-li-3 .child {
+    padding-left: 0;
+}
