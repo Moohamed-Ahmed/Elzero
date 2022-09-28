@@ -21,7 +21,7 @@ body {
     position: relative;
 }
 
-@media (max-width:500px) {
+@media (max-width:700px) {
     .container {
         width: 77%;
         
