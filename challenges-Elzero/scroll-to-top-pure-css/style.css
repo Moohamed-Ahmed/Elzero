@@ -1,0 +1,14 @@
+* {
+    scroll-behavior: smooth;
+}
+
+div {
+    margin-bottom: 300px;
+    margin-left: 20px;
+}
+
+span img {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+}
