@@ -12,13 +12,20 @@ body {
 }
 
 .container {
-    width: 35%;
+    width: 30%;
     background-color: white;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding: 25px;
     position: relative;
+}
+
+@media (max-width:500px) {
+    .container {
+        width: 77%;
+        
+    }
 }
 
 .head {
@@ -41,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 15px 0;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .content>div {
@@ -64,6 +71,7 @@ body {
     padding: 5px;
     line-height: 30px;
     border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 img {
