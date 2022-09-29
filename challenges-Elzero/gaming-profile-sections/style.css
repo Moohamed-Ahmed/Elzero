@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    direction: rtl;
+    padding: 20px;
+    height: 100vh;
+    background-color: #eee;
+    font-family: 'Changa', sans-serif
+}
+
+.project {
+    position: relative;
+    top: -6px;
+    right: 80%;
+    width: 20%;
+    background: #ff5722;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-family: cursive;
+    padding: 15px
+}
+
+img {
+    width: 50px
+}
+
+.container>div {
+    margin-bottom: 28px;
+    position: relative
+}
+
+.container>div::after {
+    content: "";
+    width: 100%;
+    height: 0.2%;
+    right: 0px;
+    bottom: -13px;
+    position: absolute;
+    background-color: #00000026
+}
+
+.container>div:nth-last-child(1):after {
+    content: ""
+}
+
+.header {
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative
+}
+
+.name::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #00000026;
+    position: absolute;
+    right: -7px
+}
+
+
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px
+}
+
+.photo img {
+    width: 80%
+}
+
+.photo p:nth-child(2) {
+    font-weight: bold
+}
+
+.photo p:nth-child(4) {
+    font-size: 14px;
+    text-align: center
+}
+
+.photo span {
+    color: #0b9990;
+    font-weight: bold
+}
+
+.photo div {
+    position: relative;
+    width: 80%;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #f1f1f1
+}
+
+.photo div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 80%;
+    height: 20px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #009688
+}
+
+.name {
+    position: relative;
+    grid-column: 2 / span 3
+}
+
+.name h1,
+.name p {
+    margin: 15px 10px
+}
+
+.name p:nth-last-child(1) {
+    position: absolute;
+    bottom: 0;
+    left: 0px
+}
+
+.points {
+    background-color: white;
+    padding: 20px
+}
+
+.points>h2,
+.tro>h2,
+.power>h2,
+.news>h2 {
+    background-color: #607d8b;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    color: white
+}
+
+.points span:nth-child(1) {
+    color: #009688;
+    font-weight: 800
+}
+
+.points p:nth-child(3)::after {
+    content: "";
+    width: 96%;
+    height: 1px;
+    display: block;
+    position: relative;
+    bottom: -10px;
+    background-color: #00000026
+}
+
+.points span:nth-child(2) {
+    color: #e92b72;
+    font-weight: 800
+}
+
+.tro {
+    padding: 20px;
+    background-color: white
+}
+
+.tro>div {
+    padding: 15px;
+    display: grid;
+    width: 96%;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid #00000026;
+    justify-items: center
+}
+
+.tro>div img {
+    margin: 10px
+}
+
+.news {
+    background-color: white;
+    padding: 20px
+}
+
+.news p span:nth-child(1) {
+    color: #e92b72;
+    font-weight: 800
+}
+
+.news p span:nth-child(2) {
+    color: #2196f3;
+    font-weight: 800
+}
+
+.power {
+    padding: 20px;
+    background-color: white
+}
+
+.power div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative
+}
+
+.power div p:nth-child(2) {
+    color: #2d942a;
+    font-weight: 800
+}
+
+.power div p:nth-child(2)::before {
+    content: "";
+    width: 101.5%;
+    height: 1%;
+    background-color: #00000026;
+    position: absolute;
+    right: 0;
+    bottom: 0px
+}
+
+.power div:nth-child(4) p:nth-child(2) {
+    color: #e92b72
+}
+
+@media (max-width:480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .name::before {
+        content: "";
+        width: 100%;
+        height: 1%;
+        background-color: #00000026;
+        position: absolute;
+        right: -7px;
+        TOP: 6px
+    }
+
+    .tro>div img {
+        width: 70%
+    }
+
+    .name p:nth-last-child(1) {
+        bottom: -22px;
+        left: -16px
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 20px
+    }
+
+    .name::before {
+        content: "";
+        width: 100%;
+        height: 1%;
+        background-color: #00000026;
+        position: absolute;
+        right: -7px;
+        TOP: 6px
+    }
+
+    .tro>div img {
+        width: 70%
+    }
+
+    .name p:nth-last-child(1) {
+        bottom: -22px;
+        left: -16px
+    }
+
+    .project {
+        top: -6px;
+        right: 0;
+        width: 100%
+    }
+}
