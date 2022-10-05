@@ -161,7 +161,7 @@ p::after {
     bottom: -30px;
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
     .parent {
         flex-direction: column;
     }
@@ -171,3 +171,4 @@ p::after {
         width: 80%;
     }
 }
+
