@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.save {
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    background-color: #2096f3;
+    color: white;
+    right: 12%;
+    top: 2%;
+}
+
+.save::after {
+    content: "";
+    border: 29px solid;
+    border-color: transparent #eee transparent transparent;
+    position: absolute;
+    left: 71%;
+    top: 0px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 70px;
+}
+
+.basic,
+.professional {
+    width: 45%;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 20px;
+    background-color: #f44336;
+    border-radius: 6px 6px 0 0;
+    color: white;
+}
+
+
+.basic div,
+.professional div {
+    background-color: white;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 60px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.professional h2 {
+    background-color: #2096f3;
+}
+
+.basic div::before,
+.professional div::before {
+    content: "✔";
+    display: block;
+    position: absolute;
+    left: 5%;
+    background-color: #009688;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: unset;
+    font-family: initial;
+}
+
+.basic div:nth-child(5):before,
+.basic div:nth-child(6):before,
+.basic div:nth-child(7):before,
+.basic div:nth-child(8):before,
+.basic div:nth-child(9):before,
+.basic div:nth-child(10):before,
+.basic div:nth-child(11):before,
+.basic div:nth-child(13):before {
+    content: "x";
+    display: block;
+    position: absolute;
+    left: 5%;
+    background-color: #e91f63;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: unset;
+    font-family: initial;
+}
+
+/* .professional div:nth-last-child(2)::after {
+    content: "?";
+    position: absolute;
+    right: 7%;
+    background-color: #7e7e7e;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 50%;
+} */
+.professional .hover::after {
+    content: "?";
+    position: absolute;
+    right: 7%;
+    background-color: #7e7e7e;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.button-one:hover::before {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.hover:hover>p {
+    display: block;
+
+}
+
+p {
+    position: absolute;
+    display: none;
+    width: 150px;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    background-color: #646464;
+    border-radius: 5px;
+    top: -75px;
+    right: -31px;
+}
+
+p::after {
+    content: "";
+    display: block;
+    border: 15px solid;
+    border-color: #646464 transparent transparent transparent;
+    position: absolute;
+    right: 40%;
+    bottom: -30px;
+}
+
+@media (max-width:400px) {
+    .parent {
+        flex-direction: column;
+    }
+
+    .basic,
+    .professional {
+        width: 80%;
+    }
+}
