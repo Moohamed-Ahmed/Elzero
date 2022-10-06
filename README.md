@@ -13,3 +13,7 @@
 #### challenge num 3 => gaming profile sections
 
 [link live](https://Moohamed-Ahmed.github.io/Elzero/challenges-Elzero/gaming-profile-sections/)
+
+#### challenge num 3 => features comparison
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/features-comparison/)
