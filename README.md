@@ -18,6 +18,14 @@
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/features-comparison/)
 
-#### challenge num 5 => featured products
+#### challenge num 5 => hover to show tooltip
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/hover-to-show-tooltip/)
+
+#### challenge num 6 => featured products
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/featured-products/)
+
+#### challenge num 7 => splitted frame
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/splitted-frame/)
