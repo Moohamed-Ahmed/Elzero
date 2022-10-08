@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Changa', sans-serif
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.fp {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 30%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #326a79;
+}
+
+.parent {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 60px 20px 0 20px;
+    border: 2px solid;
+    position: relative;
+}
+
+.parent div {
+    border: 4px solid #eee;
+    margin: 10px;
+    width: calc(100% / 4);
+    text-align: center;
+    position: relative;
+}
+
+.parent div img {
+    width: 100%;
+    height: 277px;
+}
+
+.parent div p:nth-child(2) {
+    font-size: 21px;
+    opacity: .6;
+}
+
+.parent div p:nth-child(3) {
+    color: #346f90;
+    position: relative;
+}
+
+.parent div:nth-child(3) p:nth-child(3) {
+    color: #fe5919;
+}
+
+.parent div p:nth-child(3)::before {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 14px;
+    left: 10%;
+}
+
+.parent div p:nth-child(3)::after {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 14px;
+    right: 10%;
+}
+
+.parent div:nth-child(3) p:nth-child(3)::after {
+    content: "";
+    width: 15%;
+    height: 2px;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 14px;
+    right: 10%;
+}
+
+.parent div:nth-child(3) p:nth-child(3)::before {
+    content: "";
+    width: 15%;
+    height: 2px;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 14px;
+    left: 10%;
+}
+
+del {
+    color: black;
+    opacity: .6;
+}
+
+.s {
+    position: absolute;
+    top: -20px;
+    left: -13px;
+    background-color: #fe5919;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+}
+
+@media (max-width:500px) {
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent div {
+        width: 90%;
+    }
+
+    .fp {
+        width: 50%;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:700px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .parent div {
+        width: 70%;
+    }
+
+    .parent div:nth-child(3) p:nth-child(3)::after {
+        width: 10%;
+    }
+
+    .parent div:nth-child(3) p:nth-child(3)::before {
+        width: 10%;
+    }
+}
