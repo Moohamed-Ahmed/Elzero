@@ -29,3 +29,7 @@
 #### challenge num 7 => splitted frame
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/splitted-frame/)
+
+#### challenge num 8 => two columns form
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/two-columns-form/)
