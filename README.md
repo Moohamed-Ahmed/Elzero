@@ -14,6 +14,10 @@
 
 [link live](https://Moohamed-Ahmed.github.io/Elzero/challenges-Elzero/gaming-profile-sections/)
 
-#### challenge num 3 => features comparison
+#### challenge num 4 => features comparison
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/features-comparison/)
+
+#### challenge num 5 => featured products
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/featured-products/)
