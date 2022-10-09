@@ -25,7 +25,7 @@ div::before {
     content: "";
     border-left: 14px solid #343a40;
     height: 102%;
-    width: 48%;
+    width: 49%;
     position: absolute;
     top: -10px;
     left: 0;
