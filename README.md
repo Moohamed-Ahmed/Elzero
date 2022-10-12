@@ -33,3 +33,7 @@
 #### challenge num 8 => two columns form
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/two-columns-form/)
+
+#### challenge num 9 => team skills and stats design
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/team-skills-and-stats-design)
