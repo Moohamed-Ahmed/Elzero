@@ -37,3 +37,7 @@
 #### challenge num 9 => team skills and stats design
 
 [link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/team-skills-and-stats-design)
+
+#### challenge num 10 => joystick and sidebar
+
+[link live](https://moohamed-ahmed.github.io/Elzero/challenges-Elzero/joystick-and-sidebar)
