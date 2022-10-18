@@ -1,0 +1,43 @@
+.felx-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.felx-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-l-10 {
+    margin-left: 20px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.m-t-20 {
+    margin: 20px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
