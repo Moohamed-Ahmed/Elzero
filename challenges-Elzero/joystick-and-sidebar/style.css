@@ -190,6 +190,7 @@ ul>li img {
     padding: 22px;
 }
 
+
 main>div:last-child {
     grid-area: 2 / 2 / 2 / 4;
     padding: 28px;
